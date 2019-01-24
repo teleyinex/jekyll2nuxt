@@ -30,11 +30,15 @@ Then re-run yarn run dev or yarn run build to launch it.
 ## Deploying to Zeit, Github or any other static site
 
 Basically be sure to know how to deploy the dist folder after running:
-
+ 
+```
 # build static site
 $ yarn build
+```
 
 You can quickly test it in your machine with python:
 
+```
 # run a simple server to test your static site
 $ python -m SimpleHTTPServer 8001
+```
