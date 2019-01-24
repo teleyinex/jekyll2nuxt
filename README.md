@@ -1,6 +1,15 @@
 # jekyll2nuxt
 
-> A jekyll to nuxtjs template
+A jekyll to nuxtjs template with batteries included!!
+
+ * Progressive Web Application.
+ * Markdown and front matter supported (it auto-converts it to JSON).
+ * Routes generation for your blogposts out of the box.
+ * Fully static site, with the perfect SEO.
+
+You can try the demo of this repository here: [https://jekyll2nuxtjs.daniellombrana.es/](https://jekyll2nuxtjs.daniellombrana.es/)
+
+You can check my [personal site](https://daniellombrana.es), that uses this template.
 
 ## Build Setup
 
