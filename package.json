@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "yarn md2json && nuxt",
     "build": "yarn md2json && nuxt build",
+    "now-build": "yarn build",
     "md2json": "m2j -c content/blogposts/*.md -o static/blogposts.json",
     "start": "nuxt start",
     "generate": "nuxt generate",
