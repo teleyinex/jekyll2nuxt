@@ -1,0 +1,50 @@
+{
+  "name": "jekyll2nuxt",
+  "version": "1.0.0",
+  "description": "A jekyll to nuxtjs template",
+  "author": "Daniel Lombraña González",
+  "private": true,
+  "scripts": {
+    "dev": "yarn md2json && nuxt",
+    "build": "yarn md2json && nuxt build",
+    "md2json": "m2j -c content/blogposts/*.md -o static/blogposts.json",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/markdownit": "^1.2.3",
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "markdown-to-json": "^0.5.1",
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.3.4",
+    "pug": "2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-infinite-loading": "^2.4.3",
+    "vuetify": "^1.3.14",
+    "vuetify-loader": "^1.0.8"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": ">=2.14.0",
+    "eslint-plugin-jest": ">=21.24.1",
+    "eslint-plugin-node": ">=7.0.1",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "nodemon": "^1.18.9",
+    "prettier": "1.14.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
